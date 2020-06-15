@@ -414,7 +414,7 @@ footer {
 
 @media screen and (max-width: 767px) {
   .contact-info-box { margin-bottom: 20px; }
-  .contact-info-box:last-child { margin-bottom: 0; }
+  .contact-info-box:last-child { margin-bottom: 0; }  
 }
 
 @media (max-width: 450px) {
