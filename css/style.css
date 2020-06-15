@@ -26,11 +26,13 @@ h1,h2,h3,h4 {
 .heading {
 	font-size: 60px;
 }
+
 .subheading {
 	font-size: 14px;
 	font-weight: bold;
 	padding-bottom: 60px;
 }
+
 .bold {
 	font-weight: bold;
 }
@@ -56,56 +58,65 @@ p {
     background: #ffffff;
     margin-bottom: 0;
 }
+
 .custom-navbar .navbar-brand  {
 	color: #303030;
 	font-size: 40px;
 }
+
 .custom-navbar .navbar-brand .navbar-toggle {
-    background: #55acee;
-    padding: 4px 6px;
-    font-size: 16px;
-    color: #fff;
+  background: #55acee;
+  padding: 4px 6px;
+  font-size: 16px;
+  color: #fff;
 }
+
 .custom-navbar .nav li a {
-    color: #505050;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 4px;
-    padding-right: 20px;
-    padding-left: 20px;
+	color: #505050;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 4px;
+	padding-right: 20px;
+	padding-left: 20px;
 	transition: all 0.3s ease-in-out;
 }
+
 .custom-navbar .nav li a:hover {
-  	background: #FFD321;
-  	transition: all 0.3s ease-in-out;
+	background: #FFD321;
+	transition: all 0.3s ease-in-out;
 }
+
 .custom-navbar .nav > li > a:focus {
-  	background-color: transparent;
-  	outline: none;
+	background-color: transparent;
+	outline: none;
 }
+
 .custom-navbar .nav li.active > a {
-    background-color: #FFD321;
+	background-color: #FFD321;
 }
+
 .custom-navbar .navbar-toggle {
-    border: none;
-    padding-top: 10px;
+	border: none;
+	padding-top: 10px;
 }
+
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #FFD321;
-    border-color: transparent;
+	background: #FFD321;
+	border-color: transparent;
 }
+
 @media(min-width:768px){
-    .custom-navbar {
-            background: #ffffff;
-            padding: 14px;
-            border-bottom: 0;
-            background: 0 0;
-         }
-    .custom-navbar.top-nav-collapse {
-            padding: 14px;
-            background: #fff;
-            border-bottom: 1px solid #eeeeee;
-        }
+	.custom-navbar {
+					background: #ffffff;
+					padding: 14px;
+					border-bottom: 0;
+					background: 0 0;
+				}
+	.custom-navbar.top-nav-collapse {
+					padding: 14px;
+					background: #fff;
+					border-bottom: 1px solid #eeeeee;
+			}
 }
 
 /* home section */
@@ -125,14 +136,18 @@ p {
   height: 100vh;
   text-align: center;
 }
+
 #home hr {
   border: 2px solid #404040;
   width: 100px;
 }
+
 #home h3 {
   letter-spacing: 2px;
 }
-#home .btn {
+
+#home .btn,
+#about .btn {
   background: transparent;
   border-radius: 0;
   border: 3px solid #404040;
@@ -142,7 +157,9 @@ p {
   margin-top: 40px;
   transition: all 0.4s ease-in-out;
 }
-#home .btn:hover {
+
+#home .btn:hover, 
+#about .btn:hover {
   background: #404040;
   color: #ffffff;
 }
@@ -159,28 +176,59 @@ p {
   text-align: center;
   margin-bottom: 10px;
 }
+
 #about .col-md-6 {
   padding-top: 60px;
 }
+
+#about p {
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+
+#about #skills {
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+#skills li {
+	padding: 7px 10px;
+	margin: 7px;
+	color: #505050;
+	background-color: #ffd321;
+}
+
 #about .col-md-6 h3 {
-  padding-top: 40px;
+  margin-top: 0;
   padding-bottom: 10px;
 }
+
 #about .col-md-6 p {
   padding-bottom: 30px;
 }
+
+#about .skill-section p {
+	padding-bottom: 0;
+}
+
 #about span {
   display: block;
   padding-bottom: 6px;
 }
+
 #about .progress {
   border-radius: 0;
   box-shadow: none;
   height: 6px;
 }
+
 #about .progress .progress-bar-primary {
   background: #FFD321;
 }
+
 
 /* portfolio section */
 #portfolio {
@@ -193,17 +241,21 @@ p {
   padding: 0;
   margin: 0;
 }
+
 #portfolio .col-md-4 {
   padding: 0;
   margin: 0;
 }
+
 #portfolio img {
   width: 100%;
   transition: all 0.4s ease-in-out;
 }
+
 #portfolio img:hover {
   opacity: 0.6;
 }
+
 /* FILTER CSS */
 .filter-wrapper {
     width: 100%;
@@ -211,10 +263,12 @@ p {
     overflow: hidden;
     text-align: center;
 }
+
 .filter-wrapper li {
     display: inline-block;
     margin: 4px;
 }
+
 .filter-wrapper li a {
     color: #999999;
     font-size: 13px;
@@ -226,6 +280,7 @@ p {
     text-decoration: none;
     transition: all 0.4s ease-in-out;
 }
+
 .filter-wrapper li .selected,
 .filter-wrapper li a:focus,
 .filter-wrapper li a:hover {
@@ -238,12 +293,14 @@ p {
 .iso-box-section {
     width: 100%;
 }
+
 .iso-box-wrapper {
     width: 100%;
     padding: 0;
     clear: both;
     position: relative;
 }
+
 .iso-box {
     position: relative;
     min-height: 50px;
@@ -251,47 +308,57 @@ p {
     overflow: hidden;
     margin-bottom: 20px;
 }
+
 .iso-box > a {
     display: block;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
+
 .iso-box > a {
     display: block;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
+
 .fluid-img {
   width: 100%;
   display: block;
 }
 
+
 /* team section */
 #team {
   text-align: center;
 }
+
 #team h3 {
   color: #202020;
   line-height: 4px;
 }
+
 #team .team-des {
   padding-top: 20px;
   padding-bottom: 40px;
 }
+
 
 /* contact section */
 #contact {
   background: #f9f9f9;
   text-align: center;
 }
+
 #contact .fa {
   font-size: 40px;
 }
+
 #contact form {
   padding-top: 80px;
 }
+
 #contact .form-control {
   border-radius: 0;
   box-shadow: none;
@@ -299,24 +366,30 @@ p {
   margin-bottom: 10px;
   transition: all 0.4s ease-in-out;
 }
+
 #contact .form-control:focus {
   border: 2px solid #808080;
 }
+
 #contact input {
   height: 50px;
 }
+
 #contact input[type="submit"] {
   border: 2px solid #808080;
   margin-top: 18px;
   height: 54px;
 }
+
 #contact input[type="submit"]:hover {
   background: #808080;
   color: #ffffff;
 }
+
 #contact textarea {
   height: 170px;
 }
+
 .contact-info-box h3 { font-size: 16px; }
 
 /* footer section */
@@ -329,16 +402,19 @@ footer {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
 .social-icon {
   padding: 0;
   text-align: center;
   vertical-align: middle;
 }
+
 .social-icon li {
   list-style: none;
   display: inline-block;
   padding: 0;
 }
+
 .social-icon li a {
   border-radius: 50%;
   color: #303030;
@@ -352,9 +428,11 @@ footer {
   margin-top: 20px;
   margin-right: 10px;
 }
+
 .social-icon li a:hover {
   background: #FFD321;
 }
+
 
 /* copyright section */
 #copyright {
@@ -363,17 +441,21 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 #copyright p {
   padding-top: 20px;
 }
+
 #copyright a {
 	color: #fff;
 }
+
 #copyright a:hover {
 	color: #FFD321;
 	text-decoration: none;
 	transition: all 0.4s ease-in-out;
 }
+
 #copyright .fa {
   background: #383838;
   color: #ffffff;
@@ -386,10 +468,12 @@ footer {
   outline: none;
   transition: all 0.4s ease-in-out;
 }
+
 #copyright .fa:hover {
   background: #FFD321;
   color: #000;
 }
+
 
 @media screen and (min-width: 992px) {
   @-moz-document url-prefix() {
