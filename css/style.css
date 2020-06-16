@@ -30,7 +30,8 @@ h1,h2,h3,h4 {
 .subheading {
 	font-size: 14px;
 	font-weight: bold;
-	padding-bottom: 60px;
+  padding-bottom: 60px;
+  text-transform: uppercase;
 }
 
 .bold {
@@ -391,6 +392,9 @@ p {
 }
 
 .contact-info-box h3 { font-size: 16px; }
+.contact-info-box a {
+  color: inherit;
+}
 
 /* footer section */
 footer {
@@ -505,12 +509,20 @@ footer {
   .heading {
     font-size: 40px;
   }
+
   #about .col-md-4 .fa {
     margin-top: 32px;
   }
+
   #contact h3 {
-    font-size: 16px;
-    padding-bottom: 40px;
+    font-size: 14px;
+    word-break: break-all;
+  }
+
+  .contact-info-box {
+    width: 45%;
+    height: 145px;
+    margin: 0 5px;
   }
 }
 
