@@ -524,7 +524,7 @@ footer {
 	color: #505050 !important;
   font-size: 13px;
   padding: 10px;
-  margin-right: 5px;
+  margin: 0 5px;
 }
 
 .fancybox-caption__body .modal-btn:hover {
@@ -534,6 +534,10 @@ footer {
 .fancybox-caption__body h4,
 .fancybox-caption__body p {
   margin: -5px 0;
+}
+
+.fancybox-caption__body .fa-github {
+  font-size: 17px;
 }
 
 .fancybox-caption__body h4 {
