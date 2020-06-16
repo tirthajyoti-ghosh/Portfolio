@@ -478,6 +478,39 @@ footer {
   color: #000;
 }
 
+.fancybox-caption__body {
+  margin-bottom: 10px;
+  height: 110px;
+}
+
+.fancybox-caption__body .modal-btn {
+  background: #FFD321;
+	color: #505050 !important;
+  font-size: 13px;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.fancybox-caption__body .modal-btn:hover {
+  text-decoration: none;
+}
+
+.fancybox-caption__body h4,
+.fancybox-caption__body p {
+  margin: -5px 0;
+}
+
+.fancybox-caption__body .fa-github {
+  font-size: 17px;
+}
+
+.fancybox-caption__body h4 {
+  margin-top: 5px;
+}
+
+.fancybox-caption__body .break {
+  display: none;
+}
 
 @media screen and (min-width: 992px) {
   @-moz-document url-prefix() {
@@ -526,33 +559,13 @@ footer {
   }
 }
 
-.fancybox-caption__body {
-  margin-bottom: 10px;
-  height: 110px;
-}
+@media (max-width: 350px) {
+  .fancybox-caption__body .modal-btn {
+    margin-bottom: 15px;
+    display: inline-block;
+  }
 
-.fancybox-caption__body .modal-btn {
-  background: #FFD321;
-	color: #505050 !important;
-  font-size: 13px;
-  padding: 10px;
-  margin: 0 5px;
+  .fancybox-caption__body .break {
+    display: block;
+  }
 }
-
-.fancybox-caption__body .modal-btn:hover {
-  text-decoration: none;
-}
-
-.fancybox-caption__body h4,
-.fancybox-caption__body p {
-  margin: -5px 0;
-}
-
-.fancybox-caption__body .fa-github {
-  font-size: 17px;
-}
-
-.fancybox-caption__body h4 {
-  margin-top: 5px;
-}
-
