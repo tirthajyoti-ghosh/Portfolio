@@ -513,3 +513,30 @@ footer {
     padding-bottom: 40px;
   }
 }
+
+.fancybox-caption__body {
+  margin-bottom: 10px;
+  height: 110px;
+}
+
+.fancybox-caption__body .modal-btn {
+  background: #FFD321;
+	color: #505050 !important;
+  font-size: 13px;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.fancybox-caption__body .modal-btn:hover {
+  text-decoration: none;
+}
+
+.fancybox-caption__body h4,
+.fancybox-caption__body p {
+  margin: -5px 0;
+}
+
+.fancybox-caption__body h4 {
+  margin-top: 5px;
+}
+
