@@ -87,10 +87,10 @@ Enjoy!
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/tirthajyoti-ghosh/Portfolio.svg?style=flat-square
-[contributors-url]: https://github.com/javitocor/My-portfolio/graphs/contributors
+[contributors-url]: https://github.com/tirthajyoti-ghosh/Portfolio/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/tirthajyoti-ghosh/Portfolio.svg?style=flat-square
-[forks-url]: https://github.com/javitocor/My-portfolio/network/members
+[forks-url]: https://github.com/tirthajyoti-ghosh/Portfolio/network/members
 [stars-shield]: https://img.shields.io/github/stars/tirthajyoti-ghosh/Portfolio.svg?style=flat-square
-[stars-url]: https://github.com/javitocor/My-portfolio/stargazers
+[stars-url]: https://github.com/tirthajyoti-ghosh/Portfolio/stargazers
 [issues-shield]: https://img.shields.io/github/issues/tirthajyoti-ghosh/Portfolio.svg?style=flat-square
 [issues-url]: https://github.com/tirthajyoti-ghosh/Portfolio/issues
