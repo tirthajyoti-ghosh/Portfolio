@@ -23,7 +23,7 @@
 
 This project contains a collection of the projects, experiences and accomplishments. This project is in development as I'll be making more experiences, accomplishments and projects. Check back from time to time.
 
-![Screenshot](https://user-images.githubusercontent.com/57726348/84790050-8b38af00-b00e-11ea-95b2-b1e8803ea120.png)
+![Screenshot](https://user-images.githubusercontent.com/57726348/90173756-8b60eb00-ddc2-11ea-998f-aa58dadeff55.png)
 
 # Built With
 
