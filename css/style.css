@@ -248,6 +248,14 @@ p {
   margin: 0;
 }
 
+#portfolio .container-padding {
+  padding: 2rem 15rem;
+}
+
+#portfolio .padding {
+  padding: 1.5rem;
+}
+
 #portfolio img {
   width: 100%;
   transition: all 0.4s ease-in-out;
@@ -519,6 +527,12 @@ footer {
       width: 33.333%;
     }
   }    
+}
+
+@media ( max-width: 1200px ) {
+  #portfolio .container-padding {
+    padding: 2rem 5rem;
+  }
 }
 
 @media ( max-width: 980px ) {
