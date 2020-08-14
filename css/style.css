@@ -1,13 +1,4 @@
-/*
-
-Blaster Template
-
-http://www.templatemo.com/tm-472-blaster
-
-*/
-
-body
-{
+body {
 	background: #ffffff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
@@ -163,6 +154,19 @@ p {
 #about .btn:hover {
   background: #404040;
   color: #ffffff;
+}
+
+#home .top-social-icons {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 15%;
+  margin: 30px auto 0 auto;
+  padding: 0;
+}
+
+.top-social-icons a {
+  color: #333;
 }
 
 /* about section */
@@ -526,11 +530,19 @@ footer {
   .container {
     width: 1440px;
   }
+  
+  #home .top-social-icons {
+    width: 12%;
+  }
 }
 
 @media ( max-width: 1200px ) {
   #portfolio .container-padding {
     padding: 2rem 5rem;
+  }
+  
+  #home .top-social-icons {
+    width: 18%;
   }
 }
 
@@ -554,6 +566,10 @@ footer {
   #contact form {
     padding-top: 30px;
   }
+  
+  #home .top-social-icons {
+    width: 22%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -563,6 +579,10 @@ footer {
   #copyright p {
     padding-left: 5rem;
   } 
+  
+  #home .top-social-icons {
+    width: 35%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -584,6 +604,10 @@ footer {
     height: 145px;
     margin: 0 5px;
   }
+  
+  #home .top-social-icons {
+    width: 40%;
+  }
 }
 
 @media (max-width: 350px) {
@@ -594,5 +618,9 @@ footer {
 
   .fancybox-caption__body .break {
     display: block;
+  }
+  
+  #home .top-social-icons {
+    width: 50%;
   }
 }
