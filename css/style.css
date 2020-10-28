@@ -283,7 +283,7 @@ p {
 }
 
 .filter-wrapper li a {
-    color: #999999;
+    color: #505050;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -298,9 +298,8 @@ p {
 .filter-wrapper li a:focus,
 .filter-wrapper li a:hover {
     background: #FFD321;
-    color: #505050;
     outline: none;
-  }
+}
 
 /* ISOTOPE BOX CSS */
 .iso-box-section {
