@@ -298,7 +298,7 @@ p {
 .filter-wrapper li a:focus,
 .filter-wrapper li a:hover {
     background: #FFD321;
-    color: #ffffff;
+    color: #505050;
     outline: none;
   }
 
