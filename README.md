@@ -33,7 +33,7 @@ This project contains a collection of the projects, experiences and accomplishme
 
 # Live Demo
 
-You can find it [here](https://tirthajyoti-ghosh.github.io/Portfolio/)
+You can find it [here](https://ghosh.tech/).
 
 # Getting Started
 
