@@ -1,95 +1,70 @@
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
+# Getting Started with Create React App
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-![Hireable](https://cdn.rawgit.com/hiendv/hireable/master/styles/default/yes.svg)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Portfolio
+## Available Scripts
 
-This project contains a collection of the projects, experiences and accomplishments. This project is in development as I'll be making more experiences, accomplishments and projects. Check back from time to time.
+In the project directory, you can run:
 
-![Screenshot](https://user-images.githubusercontent.com/57726348/90173756-8b60eb00-ddc2-11ea-998f-aa58dadeff55.png)
+### `yarn start`
 
-# Built With
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- HTML
-- CSS
-- Bootstrap
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-# Live Demo
+### `yarn test`
 
-You can find it [here](https://ghosh.tech/).
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-# Getting Started
+### `yarn build`
 
-To get a local copy up and running follow these simple example steps.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Clone the project unto your local machine
-cd into the folder, find the index.html file and open it
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-# Prerequisites
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- Get your browsers up to date
+### `yarn eject`
 
-# Install
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-- Install VSCode or any code editor you like
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-# Deployment
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-- Get an online web hosting
-- Upload all the files in the htdocs folder of your domain
-- Access your domain name in browser
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-# Author
+## Learn More
 
-👤 **Tirthajyoti Ghosh**
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- Github: [@Tirthajyoti Ghosh](https://github.com/tirthajyoti-ghosh)
-- Twitter: [@terrific_ghosh](https://twitter.com/terrific_ghosh)
-- Linkedin: [Tirthajyoti Ghosh](https://www.linkedin.com/in/tirthajyoti-ghosh/)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-# 🤝 Contributing
+### Code Splitting
 
-Contributions, issues and feature requests are welcome!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Feel free to check the [issues page](https://github.com/tirthajyoti-ghosh/Portfolio/issues).
+### Analyzing the Bundle Size
 
-# Attributions and Credit 🚀
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-- Microverse
-- Templatemo
+### Making a Progressive Web App
 
-# Show your support
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Give a ⭐️ if you like this project!
+### Advanced Configuration
 
-*Check out my stories on medium to see what I'm talking about! Follow me on GitHub and Twitter to see what I am up to!*
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Enjoy!
+### Deployment
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/tirthajyoti-ghosh/Portfolio.svg?style=flat-square
-[contributors-url]: https://github.com/tirthajyoti-ghosh/Portfolio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/tirthajyoti-ghosh/Portfolio.svg?style=flat-square
-[forks-url]: https://github.com/tirthajyoti-ghosh/Portfolio/network/members
-[stars-shield]: https://img.shields.io/github/stars/tirthajyoti-ghosh/Portfolio.svg?style=flat-square
-[stars-url]: https://github.com/tirthajyoti-ghosh/Portfolio/stargazers
-[issues-shield]: https://img.shields.io/github/issues/tirthajyoti-ghosh/Portfolio.svg?style=flat-square
-[issues-url]: https://github.com/tirthajyoti-ghosh/Portfolio/issues
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
