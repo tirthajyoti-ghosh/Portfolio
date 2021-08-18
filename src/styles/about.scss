@@ -1,0 +1,65 @@
+section.about {
+    background-color: #fff;
+    border-top-right-radius: 7rem;
+
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 30px;
+        display: flex;
+
+        .text {
+            width: 40%;
+
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 52px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            button {
+                margin-top: 30px;
+            }
+        }
+
+        .skills {
+            width: 60%;
+
+            .accordion {
+                margin-left: 40px;
+
+                &__heading {
+                    padding: 15px;
+
+                    &.border {
+                        border-bottom: 2px solid #dfe1e6;
+                    }
+
+                    .accordion__button {
+                        display: flex;
+                        justify-content: space-between;
+                        color: #344563;
+
+                        .arrow {
+                            display: inline-block;
+                            padding-top: 5px;
+                            transform: rotate(0deg);
+                            transition-duration: 300ms;
+
+                            &.rotate {
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

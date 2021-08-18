@@ -3,6 +3,12 @@
 // Reset
 @import 'reset.scss';
 
+// Buttons
+@import '_buttons.scss';
+
+// Social
+@import '_social.scss';
+
 // Navbar
 @import 'navbar.scss';
 
@@ -11,3 +17,6 @@
 
 // Portfolio
 @import 'portfolio.scss';
+
+// About
+@import 'about.scss';

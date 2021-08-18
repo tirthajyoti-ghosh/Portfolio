@@ -109,7 +109,7 @@ const Portfolio = () => {
                             ))}
                         </ul>
 
-                        <button className="see-project" type="button">
+                        <button type="button">
                             See Project
                         </button>
                     </div>
