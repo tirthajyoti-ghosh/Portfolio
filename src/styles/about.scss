@@ -34,27 +34,63 @@ section.about {
 
             .accordion {
                 margin-left: 40px;
+                transition: all 0.3ms;
 
                 &__heading {
                     padding: 15px;
+                    transition: all 0.3ms;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    cursor: pointer;
 
                     &.border {
                         border-bottom: 2px solid #dfe1e6;
                     }
+                }
 
-                    .accordion__button {
+                &__button {
+                    display: flex;
+                    justify-content: space-between;
+                    color: #344563;
+                    transition: all 0.3ms;
+
+                    .arrow {
+                        display: inline-block;
+                        padding-top: 5px;
+                        transform: rotate(0deg);
+                        transition-duration: 300ms;
+
+                        &.rotate {
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+
+                &__panel {
+                    transition: all 0.3ms;
+
+                    .items {
                         display: flex;
-                        justify-content: space-between;
-                        color: #344563;
+                        flex-wrap: wrap;
+                        max-width: 100%;
 
-                        .arrow {
-                            display: inline-block;
-                            padding-top: 5px;
-                            transform: rotate(0deg);
-                            transition-duration: 300ms;
+                        li {
+                            padding: 12px;
+                            margin: 0 15px 15px 0;
+                            background: #f7f7f9;
+                            min-width: 120px;
+                            border-radius: 8px;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 20px;
 
-                            &.rotate {
-                                transform: rotate(90deg);
+                            img {
+                                width: 48px;
+                                height: 48px;
+                                display: block;
+                                margin-bottom: 15px;
+                                object-fit: contain;
                             }
                         }
                     }
