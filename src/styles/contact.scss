@@ -1,0 +1,79 @@
+section.contact {
+    height: calc(100vh - 80px);
+    background-color: #fff;
+
+    .content {
+        height: 100%;
+        padding: 120px 30px;
+        border-top-left-radius: 7rem;
+        background-color: #6070ff;
+
+        h1,
+        p {
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 52px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 28px;
+            max-width: 550px;
+            margin: 0 auto 30px;
+        }
+
+        .ant-form {
+            max-width: 450px;
+            margin: 0 auto;
+
+            input,
+            textarea {
+                width: 100%;
+                border: 1px solid #cfd8dc;
+                border-radius: 2px;
+                margin: 10px 0;
+                padding: 15px;
+                font-size: 17px;
+                line-height: 20px;
+
+                &::placeholder {
+                    color: #b3bac5;
+                }
+            }
+
+            .ant-form-item-explain-error {
+                color: #fff;
+            }
+
+            .ant-form-item-has-error {
+                input,
+                textarea {
+                    box-shadow: 0 8px 16px rgba(243, 30, 19, 0.24);
+                    border: 1.5px solid #f32013;
+                }
+            }
+
+            .ant-btn {
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 24px;
+                color: #6070ff;
+                padding: 12px 16px;
+                margin: 30px auto 0;
+                display: block;
+
+                &:hover {
+                    background: #fff;
+                    box-shadow: none;
+                    color: #6070ff;
+                }
+            }
+        }
+    }
+}
