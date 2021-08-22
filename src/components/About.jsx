@@ -18,7 +18,7 @@ const About = () => (
 
                 <Social />
 
-                <button type="button" onClick={() => window.open('https://docs.google.com/document/d/1UWZDRxFhXrHgj-SmyL2hgXVnE_Zfh5FThPayeqreOcM/edit?usp=sharing', '_blank')}>
+                <button className="btn" type="button" onClick={() => window.open('https://docs.google.com/document/d/1UWZDRxFhXrHgj-SmyL2hgXVnE_Zfh5FThPayeqreOcM/edit?usp=sharing', '_blank')}>
                     Get My Resume
                 </button>
             </div>

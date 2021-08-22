@@ -7,7 +7,7 @@ import {
     AccordionItemPanel,
 } from 'react-accessible-accordion';
 
-import { ArrowRight } from './Icons';
+import { ArrowRightIcon } from './Icons';
 
 import rubyIcon from '../images/ruby-icon.png';
 import htmlIcon from '../images/html-icon.png';
@@ -150,7 +150,7 @@ const Skills = () => {
                                 <span>{accordion.title}</span>
 
                                 <span className={`arrow ${itemOpened.includes(accordion.id) ? 'rotate' : ''}`}>
-                                    <ArrowRight />
+                                    <ArrowRightIcon />
                                 </span>
                             </AccordionItemButton>
                         </AccordionItemHeading>

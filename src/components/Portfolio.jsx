@@ -1,15 +1,34 @@
 /* eslint-disable max-len */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 import appointioImg from '../images/appointio.png';
 import animexImg from '../images/animex.png';
 import jobListingsImg from '../images/job-listing.png';
 // import battleOfGrandiaImg from '../images/battle-of-grandia.png';
 import roomMeterImg from '../images/room-meter.png';
+import ProjectModal from './ProjectModal';
 // import jobScraperImg from '../images/freelance-job-scraper.png';
 
 const Portfolio = () => {
     const [currentProject, setCurrentProject] = useState();
+
+    // Wake up Heroku dynos
+    useEffect(async () => {
+        const promises = [
+            (async () => {
+                await axios.get('https://tg-appointio.herokuapp.com/apartments');
+            })(),
+            (async () => {
+                await axios.get('https://ghosh-cors-anywhere.herokuapp.com/');
+            })(),
+            (async () => {
+                await axios.get('https://ghosh-cors-anywhere.herokuapp.com/https://gentle-bastion-08051.herokuapp.com/');
+            })(),
+        ];
+
+        await Promise.all(promises);
+    }, []);
 
     const projects = [
         {
@@ -109,12 +128,14 @@ const Portfolio = () => {
                             ))}
                         </ul>
 
-                        <button type="button">
+                        <button className="btn" type="button" onClick={() => setCurrentProject(project)}>
                             See Project
                         </button>
                     </div>
                 </div>
             ))}
+
+            {currentProject && <ProjectModal project={currentProject} setCurrentProject={setCurrentProject} />}
         </section>
     );
 };

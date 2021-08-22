@@ -15,7 +15,7 @@ const Contact = () => {
         <section className="contact" id="contact">
             <div className="content">
                 <h1>Contact me</h1>
-                <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+                <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding, I’d love to help with it. </p>
 
                 <Form form={form} onFinish={submitContactForm}>
                     <Form.Item
@@ -59,7 +59,7 @@ const Contact = () => {
                     </Form.Item>
 
                     <Form.Item>
-                        <Button type="primary" htmlType="submit">
+                        <Button className="btn" type="primary" htmlType="submit">
                             Get in touch
                         </Button>
                     </Form.Item>

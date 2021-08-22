@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap");
+@import 'antd/dist/antd.css';
 
 // Reset
 @import 'reset.scss';
 
-// Buttons
-@import '_buttons.scss';
+// Common
+@import '_common.scss';
 
 // Social
 @import '_social.scss';
+
+// Project Modal
+@import '_modal.scss';
 
 // Navbar
 @import 'navbar.scss';

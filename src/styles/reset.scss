@@ -5,12 +5,17 @@
     font-family: 'Poppins', Courier, monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #e5e5e5;
 }
 
 ul {
     list-style-type: none;
+    margin-bottom: 0;
 }
 
 a {

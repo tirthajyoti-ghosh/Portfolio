@@ -41,44 +41,10 @@ section.portfolio {
                 line-height: 52px;
             }
 
-            .info {
-                display: flex;
-                align-items: center;
-                margin: 5px 0 25px;
-
-                li {
-                    padding-right: 10px;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: 24px;
-                    color: #6b778c;
-                }
-
-                li.circle {
-                    padding-bottom: 3px;
-                }
-            }
-
             p {
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 24px;
-            }
-
-            .tags {
-                margin: 25px 0 30px;
-                display: flex;
-
-                li {
-                    padding: 5px 10px;
-                    margin-right: 10px;
-                    background: #ebebff;
-                    color: #6070ff;
-                    border-radius: 8px;
-                    font-weight: 500;
-                    font-size: 12px;
-                    line-height: 16px;
-                }
             }
         }
 
