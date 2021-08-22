@@ -5,6 +5,11 @@ header {
     right: 0;
     background: #fff;
     z-index: 99;
+    transition-duration: 0.3s;
+
+    &.box-shadow {
+        filter: drop-shadow(0 0 16px rgba(64, 83, 252, 0.24));
+    }
 
     .navbar {
         max-width: 1400px;
