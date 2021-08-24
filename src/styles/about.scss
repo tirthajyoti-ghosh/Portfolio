@@ -8,8 +8,20 @@ section.about {
         padding: 150px 30px;
         display: flex;
 
+        @media screen and (max-width: 576px) {
+            display: block;
+        }
+
         .text {
             width: 40%;
+
+            @media screen and (max-width: 768px) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: 576px) {
+                width: 100%;
+            }
 
             h1 {
                 font-weight: bold;
@@ -32,9 +44,22 @@ section.about {
         .skills {
             width: 60%;
 
+            @media screen and (max-width: 768px) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: 576px) {
+                width: 100%;
+            }
+
             .accordion {
                 margin-left: 40px;
                 transition: all 0.3ms;
+
+                @media screen and (max-width: 576px) {
+                    margin-left: 0;
+                    margin-top: 30px;
+                }
 
                 &__heading {
                     padding: 15px;
@@ -46,6 +71,10 @@ section.about {
 
                     &.border {
                         border-bottom: 2px solid #dfe1e6;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 17px;
                     }
                 }
 
@@ -85,12 +114,27 @@ section.about {
                             font-size: 15px;
                             line-height: 20px;
 
+                            @media screen and (max-width: 856px) {
+                                min-width: 108px;
+                            }
+
+                            @media screen and (max-width: 768px) {
+                                min-width: 100%;
+                                display: flex;
+                                align-items: center;
+                            }
+
                             img {
                                 width: 48px;
                                 height: 48px;
                                 display: block;
                                 margin-bottom: 15px;
                                 object-fit: contain;
+
+                                @media screen and (max-width: 768px) {
+                                    margin-bottom: 0;
+                                    margin-right: 15px;
+                                }
                             }
                         }
                     }

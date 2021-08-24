@@ -45,6 +45,10 @@ section.contact {
                 &::placeholder {
                     color: #b3bac5;
                 }
+
+                @media screen and (max-width: 576px) {
+                    border-radius: 8px;
+                }
             }
 
             .ant-form-item-explain-error {
@@ -73,6 +77,10 @@ section.contact {
                     background: #fff;
                     box-shadow: none;
                     color: #6070ff;
+                }
+
+                @media screen and (max-width: 576px) {
+                    margin: 0;
                 }
             }
         }
