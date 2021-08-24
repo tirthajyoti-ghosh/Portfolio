@@ -66,16 +66,8 @@ const Skills = () => {
                     image: reduxIcon,
                 },
                 {
-                    text: 'Rails',
-                    image: railsIcon,
-                },
-                {
                     text: 'Node.js',
                     image: nodejsIcon,
-                },
-                {
-                    text: 'PostgreSQL',
-                    image: postgresqlIcon,
                 },
                 {
                     text: 'MongoDB',
@@ -86,16 +78,24 @@ const Skills = () => {
                     image: serverlessIcon,
                 },
                 {
+                    text: 'Auth0',
+                    image: auth0Icon,
+                },
+                {
+                    text: 'Rails',
+                    image: railsIcon,
+                },
+                {
+                    text: 'PostgreSQL',
+                    image: postgresqlIcon,
+                },
+                {
                     text: 'Heroku',
                     image: herokuIcon,
                 },
                 {
                     text: 'Netlify',
                     image: netlifyIcon,
-                },
-                {
-                    text: 'Auth0',
-                    image: auth0Icon,
                 },
                 {
                     text: 'Git',
