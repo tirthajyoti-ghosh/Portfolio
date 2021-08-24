@@ -10,11 +10,24 @@ section.hero {
         margin: 0 auto;
         padding: 0 6.5rem;
 
+        @media screen and (max-width: 576px) {
+            padding: 0 2.5rem;
+        }
+
+        @media screen and (max-width: 480px) {
+            padding: 0 1.5rem;
+        }
+
         h1 {
             font-weight: bold;
             font-size: 48px;
             line-height: 60px;
             color: #091e42;
+
+            @media screen and (max-width: 768px) {
+                font-size: 40px;
+                line-height: 52px;
+            }
         }
 
         h2 {
@@ -24,6 +37,11 @@ section.hero {
             max-width: 950px;
             margin-top: 10px;
             color: #344563;
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                line-height: 24px;
+            }
         }
     }
 }
