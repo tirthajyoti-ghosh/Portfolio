@@ -1,3 +1,5 @@
+@import '_mobile-menu.scss';
+
 header {
     position: fixed;
     top: 0;
@@ -26,8 +28,26 @@ header {
             color: #6070ff;
         }
 
+        .menu-burger {
+            display: none;
+
+            @media screen and (max-width: 576px) {
+                display: block;
+                background-color: #fff;
+                border: none;
+                outline: none;
+                margin-right: 20px;
+                cursor: pointer;
+                padding: 0 10px 10px;
+            }
+        }
+
         .links {
             display: flex;
+
+            @media screen and (max-width: 576px) {
+                display: none;
+            }
 
             li {
                 padding: 0 20px;

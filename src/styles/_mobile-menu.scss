@@ -1,0 +1,43 @@
+#mobile-navbar-drawer {
+    background-color: #001aff96;
+    backdrop-filter: blur(7px);
+}
+
+.ant-drawer-mask {
+    display: none;
+}
+
+.ant-drawer-content-wrapper {
+    min-width: 100%;
+
+    .ant-drawer-content {
+        background-color: transparent;
+
+        .ant-drawer-close {
+            color: #fff;
+            padding-right: 10px;
+        }
+
+        .ant-drawer-body {
+            .links {
+                margin-top: 20px;
+
+                li {
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 44px;
+                    color: #fff;
+                    margin-bottom: 30px;
+
+                    a:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ant-drawer-right.ant-drawer-open .ant-drawer-content-wrapper {
+    box-shadow: none;
+}
