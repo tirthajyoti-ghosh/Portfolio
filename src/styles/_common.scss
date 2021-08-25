@@ -23,6 +23,35 @@ button.btn {
     }
 }
 
+.spinner-cont {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #ffffffb3;
+
+    .loading-spinner {
+        position: absolute;
+        top: calc(50% - 2em);
+        left: calc(50% - 2em);
+        z-index: 9999;
+        border: 4px solid hsla(223, 88%, 59%, 0.205);
+        border-top-color: #396df2;
+        border-radius: 50%;
+        width: 4em;
+        height: 4em;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+
 .info {
     display: flex;
     align-items: center;

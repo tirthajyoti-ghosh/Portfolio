@@ -83,6 +83,12 @@ section.contact {
                     margin: 0;
                 }
             }
+
+            .ant-btn-primary:hover,
+            .ant-btn-primary:focus {
+                border-color: transparent;
+                background-color: #fff;
+            }
         }
     }
 }

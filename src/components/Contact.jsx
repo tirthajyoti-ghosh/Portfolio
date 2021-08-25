@@ -1,15 +1,23 @@
 /* eslint-disable max-len */
+import React, { useState } from 'react';
 import {
-    Form, Input, Button,
+    Form, Input, Button, message,
 } from 'antd';
 import axios from 'axios';
+import LoadingSpinner from './LoadingSpinner';
 
 const Contact = () => {
     const [form] = Form.useForm();
     const { TextArea } = Input;
 
+    const [isLoading, setIsLoading] = useState(false);
+
     const submitContactForm = async (values) => {
+        setIsLoading(true);
         await axios.post('/api/postContact', values);
+        form.resetFields();
+        setIsLoading(false);
+        message.success("Thanks for contacting me! I'll get back to you shortly.", 5);
     };
 
     return (
@@ -66,6 +74,8 @@ const Contact = () => {
                     </Form.Item>
                 </Form>
             </div>
+
+            {isLoading && <LoadingSpinner />}
         </section>
     );
 };
