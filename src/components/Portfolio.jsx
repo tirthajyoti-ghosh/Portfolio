@@ -17,10 +17,10 @@ const Portfolio = () => {
     useEffect(async () => {
         const promises = [
             (async () => {
-                await axios.get('https://tg-appointio.herokuapp.com/apartments');
+                await axios.get('https://ghosh-cors-anywhere.herokuapp.com/');
             })(),
             (async () => {
-                await axios.get('https://ghosh-cors-anywhere.herokuapp.com/');
+                await axios.get('https://ghosh-cors-anywhere.herokuapp.com/https://tg-appointio.herokuapp.com/apartments');
             })(),
             (async () => {
                 await axios.get('https://ghosh-cors-anywhere.herokuapp.com/https://gentle-bastion-08051.herokuapp.com/');

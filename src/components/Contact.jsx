@@ -2,14 +2,14 @@
 import {
     Form, Input, Button,
 } from 'antd';
+import axios from 'axios';
 
 const Contact = () => {
     const [form] = Form.useForm();
     const { TextArea } = Input;
 
-    const submitContactForm = (values) => {
-        // eslint-disable-next-line no-console
-        console.log(values);
+    const submitContactForm = async (values) => {
+        await axios.post('/api/postContact', values);
     };
 
     return (
