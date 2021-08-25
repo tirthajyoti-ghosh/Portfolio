@@ -8,6 +8,7 @@ const Contact = () => {
     const { TextArea } = Input;
 
     const submitContactForm = (values) => {
+        // eslint-disable-next-line no-console
         console.log(values);
     };
 
