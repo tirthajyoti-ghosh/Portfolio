@@ -13,11 +13,18 @@ const Contact = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     const submitContactForm = async (values) => {
-        setIsLoading(true);
-        await axios.post('/api/postContact', values);
-        form.resetFields();
-        setIsLoading(false);
-        message.success("Thanks for contacting me! I'll get back to you shortly.", 5);
+        try {
+            setIsLoading(true);
+
+            await axios.post('/api/postContact', values);
+            form.resetFields();
+
+            setIsLoading(false);
+            message.success("Thanks for contacting me! I'll get back to you shortly.", 5);
+        } catch (error) {
+            setIsLoading(false);
+            message.error('Something went wrong. Please try again later.', 5);
+        }
     };
 
     return (
