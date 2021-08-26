@@ -18,6 +18,17 @@ const Navbar = () => {
         });
     });
 
+    const menuItems = ['Portfolio', 'About', 'Contact'];
+    const menuItemsJsx = (
+        <ul className="links">
+            {menuItems.map((menuItem) => (
+                <li key={menuItem} onClick={() => setDrawerVisible(false)}>
+                    <a href={`#${menuItem.toLowerCase()}`}>{menuItem}</a>
+                </li>
+            ))}
+        </ul>
+    );
+
     return (
         <header className={showBoxShadow ? 'box-shadow' : ''}>
             <nav className="navbar">
@@ -27,11 +38,7 @@ const Navbar = () => {
                     <MenuBurgerIcon />
                 </button>
 
-                <ul className="links">
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                {menuItemsJsx}
             </nav>
 
             <Drawer
@@ -43,11 +50,7 @@ const Navbar = () => {
                 onClose={() => setDrawerVisible(false)}
                 style={{ padding: 0 }}
             >
-                <ul className="links">
-                    <li onClick={() => setDrawerVisible(false)}><a href="#portfolio">Portfolio</a></li>
-                    <li onClick={() => setDrawerVisible(false)}><a href="#about">About</a></li>
-                    <li onClick={() => setDrawerVisible(false)}><a href="#contact">Contact</a></li>
-                </ul>
+                {menuItemsJsx}
             </Drawer>
         </header>
     );

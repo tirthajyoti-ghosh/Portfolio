@@ -6,7 +6,7 @@ import {
 import axios from 'axios';
 import ReCaptchaV2 from 'react-google-recaptcha';
 
-import LoadingSpinner from './LoadingSpinner';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 const Contact = () => {
     const [form] = Form.useForm();

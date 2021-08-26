@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
-import Skills from './Skills';
-import Social from './Social';
+import Skills from '../components/Skills';
+import Social from '../components/Social';
 
 const About = () => (
     <section className="about" id="about">

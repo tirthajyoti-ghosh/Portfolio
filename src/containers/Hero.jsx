@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import Social from './Social';
+import Social from '../components/Social';
 
 const Hero = () => (
     <section className="hero">
