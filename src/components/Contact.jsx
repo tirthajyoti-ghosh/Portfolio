@@ -1,14 +1,18 @@
 /* eslint-disable max-len */
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import {
     Form, Input, Button, message,
 } from 'antd';
 import axios from 'axios';
+import ReCaptchaV2 from 'react-google-recaptcha';
+
 import LoadingSpinner from './LoadingSpinner';
 
 const Contact = () => {
     const [form] = Form.useForm();
     const { TextArea } = Input;
+
+    const recaptchaRef = useRef();
 
     const [isLoading, setIsLoading] = useState(false);
 
@@ -16,7 +20,9 @@ const Contact = () => {
         try {
             setIsLoading(true);
 
-            await axios.post('/api/postContact', values);
+            const token = await recaptchaRef.current.executeAsync();
+            await axios.post('/api/postContact', { ...values, token });
+
             form.resetFields();
 
             setIsLoading(false);
@@ -73,6 +79,12 @@ const Contact = () => {
                     >
                         <TextArea placeholder="Write your message here" rows={7} />
                     </Form.Item>
+
+                    <ReCaptchaV2
+                        ref={recaptchaRef}
+                        size="invisible"
+                        sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
+                    />
 
                     <Form.Item>
                         <Button className="btn" type="primary" htmlType="submit">
