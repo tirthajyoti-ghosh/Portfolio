@@ -6,7 +6,12 @@ section.contact {
         height: 100%;
         padding: 120px 30px;
         border-top-left-radius: 7rem;
-        background-color: #6070ff;
+        background: #6070ff url(../images/contact-form-bg.svg) no-repeat center 80px;
+
+        @media screen and (max-width: 876px) {
+            background-image: url(../images/contact-form-bg-mobile.svg);
+            background-position: 100% 50%;
+        }
 
         h1,
         p {

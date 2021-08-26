@@ -2,8 +2,17 @@ section.hero {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: #fff;
     border-bottom-left-radius: 7rem;
+    background: #fff url(../images/hero-bg.svg) no-repeat center 80px;
+
+    @media screen and (max-width: 876px) {
+        background-image: url(../images/hero-bg-mobile.svg);
+        background-size: cover;
+    }
+
+    @media screen and (max-width: 576px) {
+        background-size: contain;
+    }
 
     .text {
         max-width: 1400px;
