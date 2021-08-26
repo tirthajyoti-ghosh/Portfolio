@@ -2,15 +2,19 @@ section.contact {
     height: calc(100vh - 80px);
     background-color: #fff;
 
+    @media screen and (max-height: 876px) {
+        height: 100%;
+    }
+
     .content {
         height: 100%;
-        padding: 120px 30px;
+        padding: 105px 30px;
         border-top-left-radius: 7rem;
         background: #6070ff url(../images/contact-form-bg.svg) no-repeat center 80px;
 
         @media screen and (max-width: 876px) {
             background-image: url(../images/contact-form-bg-mobile.svg);
-            background-position: 100% 50%;
+            background-position: 100% 0;
         }
 
         h1,
