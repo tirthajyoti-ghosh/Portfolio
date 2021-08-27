@@ -22,7 +22,7 @@ export default [
         title: 'Languages',
         items: [
             {
-                text: 'Javascript',
+                text: 'JavaScript',
                 image: javascriptIcon,
             },
             {
@@ -88,7 +88,7 @@ export default [
                 image: gitIcon,
             },
             {
-                text: 'Github',
+                text: 'GitHub',
                 image: githubIcon,
             },
             {

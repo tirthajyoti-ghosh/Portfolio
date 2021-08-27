@@ -32,7 +32,7 @@ export default [
     {
         id: 'job-listings',
         name: 'Job Listings',
-        description: 'A Single Page Application that allows users to search for jobs or people by skill. Consumes Torre APIs.',
+        description: 'A single page application that allows users to search for jobs or people by skill. Consumes Torre APIs.',
         type: 'Front End',
         date: '2021',
         image: jobListingsImg,
