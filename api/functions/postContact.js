@@ -47,6 +47,7 @@ exports.handler = async (event) => {
 
         return { statusCode: 400 };
     } catch (error) {
+        // eslint-disable-next-line no-console
         console.log(error);
 
         return {
