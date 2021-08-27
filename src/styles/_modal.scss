@@ -1,0 +1,123 @@
+.ant-modal-mask {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.ant-modal {
+    max-width: 800px !important;
+    min-width: 800px !important;
+
+    @media screen and (max-width: 850px) {
+        min-width: 95% !important;
+        max-width: 95% !important;
+    }
+}
+
+.ant-modal-content {
+    border-radius: 16px;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.ant-modal-body {
+    h1 {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 52px;
+        color: #091e42;
+        margin-bottom: 5px;
+    }
+
+    .info li {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .tags {
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ebecf0;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 50px;
+
+        @media screen and (max-width: 576px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    .details {
+        display: flex;
+        margin-bottom: 3.5rem;
+
+        @media screen and (max-width: 850px) {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            width: 70%;
+            padding-right: 30px;
+
+            @media screen and (max-width: 850px) {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+
+        .links {
+            display: flex;
+
+            @media screen and (max-width: 850px) {
+                justify-content: center;
+            }
+
+            @media screen and (max-width: 380px) {
+                display: block;
+            }
+
+            button.btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 152px;
+                height: 40px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 20px;
+
+                &:first-child {
+                    margin-right: 10px;
+                }
+
+                svg {
+                    margin-left: 10px;
+                }
+
+                @media screen and (max-width: 850px) {
+                    height: 50px;
+                }
+
+                @media screen and (max-width: 380px) {
+                    width: 100%;
+
+                    &:first-child {
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

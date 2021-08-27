@@ -1,0 +1,96 @@
+section.portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    .project {
+        background-color: #fff;
+        display: flex;
+        padding: 20px;
+        margin: 100px 0;
+        border: 2px solid #dfe1e6;
+        border-radius: 24px;
+        transition: all 0.3s;
+
+        @media screen and (max-width: 876px) {
+            flex-direction: column;
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+
+            @media screen and (max-width: 876px) {
+                order: 1;
+            }
+        }
+
+        .img {
+            width: 50%;
+
+            @media screen and (max-width: 876px) {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        }
+
+        .details {
+            width: 50%;
+            padding: 20px 40px;
+
+            @media screen and (max-width: 876px) {
+                width: 100%;
+                padding: 20px 0;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 52px;
+
+                @media screen and (max-width: 876px) {
+                    font-size: 32px;
+                    line-height: 44px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            p {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+
+                @media screen and (max-width: 876px) {
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        &:hover {
+            border-color: #a7aeff;
+            box-shadow: 0 20px 30px 10px #a7aeff38;
+
+            .details button {
+                background: #4053fc;
+                box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+                color: #fff;
+            }
+        }
+
+        button.btn:active {
+            background: #2230d2;
+            box-shadow: none;
+            color: #fff;
+        }
+    }
+}
