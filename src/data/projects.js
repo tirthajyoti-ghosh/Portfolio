@@ -36,7 +36,7 @@ export default [
         type: 'Front End',
         date: '2021',
         image: jobListingsImg,
-        liveLink: 'https://ghosh-job-listings.netlify.app/',
+        liveLink: 'https://jober.netlify.app/',
         sourceLink: 'https://github.com/tirthajyoti-ghosh/job-listing/tree/job-listing',
         tags: ['react/redux', 'sass', 'rest api', 'react router', 'netlify'],
     },
