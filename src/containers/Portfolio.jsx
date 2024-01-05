@@ -1,29 +1,11 @@
 /* eslint-disable max-len */
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
 
 import projects from '../data/projects';
 import ProjectModal from '../components/ProjectModal';
 
 const Portfolio = () => {
     const [currentProject, setCurrentProject] = useState();
-
-    // Wake up Heroku dynos
-    useEffect(async () => {
-        const promises = [
-            (async () => {
-                await axios.get('https://ghosh-cors-anywhere.herokuapp.com/');
-            })(),
-            (async () => {
-                await axios.get('https://ghosh-cors-anywhere.herokuapp.com/https://tg-appointio.herokuapp.com/apartments');
-            })(),
-            (async () => {
-                await axios.get('https://ghosh-cors-anywhere.herokuapp.com/https://gentle-bastion-08051.herokuapp.com/');
-            })(),
-        ];
-
-        await Promise.all(promises);
-    }, []);
 
     return (
         <section className="portfolio" id="portfolio">

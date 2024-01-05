@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Modal } from 'antd';
 import { CloseIcon, ExternalLinkIcon, GithubIcon } from './Icons';
+import Tooltip from './Tooltip';
 
 const ProjectModal = ({ project, setCurrentProject }) => (
     <Modal
@@ -41,10 +42,19 @@ const ProjectModal = ({ project, setCurrentProject }) => (
                         See live
                         <ExternalLinkIcon />
                     </button>
-                    <button className="btn" type="button" onClick={() => window.open(project.sourceLink, '_blank')}>
-                        See source
-                        <GithubIcon />
-                    </button>
+                    {project.sourceLink ? (
+                        <button className="btn" type="button" onClick={() => window.open(project.sourceLink, '_blank')}>
+                            See source
+                            <GithubIcon />
+                        </button>
+                    ) : (
+                        <Tooltip content="Private repository">
+                            <button disabled={!project.sourceLink} className="btn" type="button">
+                                See source
+                                <GithubIcon />
+                            </button>
+                        </Tooltip>
+                    )}
                 </div>
             </div>
         </div>

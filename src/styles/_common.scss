@@ -21,6 +21,13 @@ button.btn {
         box-shadow: none;
         color: #fff;
     }
+
+    &:disabled {
+        background: #ffffff;
+        border: 1px solid #c1c7d0;
+        color: #c1c7d0;
+        cursor: not-allowed;
+    }
 }
 
 .info {
