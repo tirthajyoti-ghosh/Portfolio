@@ -1,8 +1,6 @@
+# This site has moved to https://tirthajyotighosh.com
+# The build is overridden to publish only a redirect — the 2020 CRA build
+# no longer needs to succeed for deploys to work.
 [build]
-    command="npm run build"
-    publish="build"
-    functions="api/functions"
-[[redirects]]
-    from="/api/*"
-    to="/.netlify/functions/:splat"
-    status=200
+  command = "true"
+  publish = "redirect-only"
